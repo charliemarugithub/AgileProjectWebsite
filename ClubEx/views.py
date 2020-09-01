@@ -48,4 +48,4 @@ def about(request):
 
 def video(request):
     obj = Video.objects.all()
-    return render(request, 'videos.html', {'obj': obj})
+    return render(request, 'clubex/videos.html', {'obj': obj})
