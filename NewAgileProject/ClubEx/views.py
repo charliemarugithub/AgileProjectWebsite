@@ -1,5 +1,5 @@
 from django.shortcuts import render
-# from .models import Video
+from .models import Video
 
 
 def index(request):
@@ -45,8 +45,7 @@ def contact(request):
 def about(request):
     return render(request, 'about.html', {'title': 'About Us'})
 
-'''
+
 def video(request):
     obj = Video.objects.all()
     return render(request, 'videos.html', {'obj': obj})
-'''
