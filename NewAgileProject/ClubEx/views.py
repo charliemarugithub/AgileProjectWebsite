@@ -3,43 +3,43 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'gymapp/index.html', {'title': 'Welcome to Gym App'})
+    return render(request, 'index.html', {'title': 'Welcome to Gym App'})
 
 
 def classes(request):
-    return render(request, 'gymapp/classes.html', {'title': 'Classes'})
+    return render(request, 'classes.html', {'title': 'Classes'})
 
 
 def classes_boxing(request):
-    return render(request, 'gymapp/boxing.html', {'title': 'Boxing'})
+    return render(request, 'boxing.html', {'title': 'Boxing'})
 
 
 def classes_pilates(request):
-    return render(request, 'gymapp/pilates.html', {'title': 'Pilates'})
+    return render(request, 'pilates.html', {'title': 'Pilates'})
 
 
 def classes_aerobics(request):
-    return render(request, 'gymapp/aerobics.html', {'title': 'Aerobics'})
+    return render(request, 'aerobics.html', {'title': 'Aerobics'})
 
 
 def classes_yoga(request):
-    return render(request, 'gymapp/yoga.html', {'title': 'Yoga'})
+    return render(request, 'yoga.html', {'title': 'Yoga'})
 
 
 def classes_spinning(request):
-    return render(request, 'gymapp/spinning.html', {'title': 'Spinning'})
+    return render(request, 'spinning.html', {'title': 'Spinning'})
 
 
 def classes_tai_chi(request):
-    return render(request, 'gymapp/taichi.html', {'title': 'Tai Chi'})
+    return render(request, 'taichi.html', {'title': 'Tai Chi'})
 
 
 def plans(request):
-    return render(request, 'gymapp/plans.html',  {'title': 'Plans'})
+    return render(request, 'plans.html',  {'title': 'Plans'})
 
 
 def contact(request):
-    return render(request, 'gymapp/contact.html',  {'title': 'Contacts'})
+    return render(request, 'contact.html',  {'title': 'Contacts'})
 
 
 def about(request):
