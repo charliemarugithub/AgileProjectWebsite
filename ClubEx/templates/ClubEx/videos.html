@@ -2,16 +2,10 @@
 {% load embed_video_tags %}
 
 
-    {% block content %}
+{% block content %}
 
-        {% for i in results %}
-            {% video i.video 'tiny' %}
-            {% video i.video_name %}
-            {% video i.content %}
-
-        <p>{{ video_name }}</p>
-        <p>{{ content }}</p>
-
+    {% for i in results %}
+        {% video i.video 'tiny' %}
+        <p>{{ i.content }}</p>
     {% endfor %}
-
 {% endblock content %}
