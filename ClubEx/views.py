@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Video
 from django.contrib.auth.decorators import login_required
+from django.db.models import Q
 
 
 def index(request):
@@ -47,6 +48,12 @@ def about(request):
     return render(request, 'clubex/about.html',  {'title': 'About Us'})
 
 
+@login_required
 def video(request):
-    obj = Video.objects.all()
-    return render(request, 'clubex/videos.html', {'obj': obj})
+    query = request.GET.get('q')
+    results = Video.objects.filter(
+        Q(category__icontains=query) |
+        Q(video_name__icontains=query) |
+        Q(content__icontains=query)
+    )
+    return render(request, 'clubex/videos.html', {'results': results})

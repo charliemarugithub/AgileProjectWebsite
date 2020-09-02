@@ -2,14 +2,14 @@ from django.urls import path
 
 from . import views
 
-from .views import Video
+from .views import video
 
 urlpatterns = [
     path('', views.index, name='index'),
     path('about/', views.about, name='about'),
     path('plans/', views.plans, name='plans'),
     path('classes/', views.classes, name='classes'),
-    path('videos/', views.video, name='videos'),
+    path('videos/', video, name='videos'),
     path('contact/', views.contact, name='contact'),
     path('classes/yoga/', views.classes_yoga, name='classes_yoga'),
     path('classes/boxing/', views.classes_boxing, name='classes_boxing'),
