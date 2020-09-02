@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Video
+from django.contrib.auth.decorators import login_required
 
 
 def index(request):
