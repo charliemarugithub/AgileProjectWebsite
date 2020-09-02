@@ -21,6 +21,7 @@ from django.urls import include, path
 
 from users import views as user_views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('ClubEx.urls')),
