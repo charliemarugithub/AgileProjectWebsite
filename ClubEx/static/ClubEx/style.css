@@ -1,8 +1,9 @@
 body {
   background: #fafafa;
   color: #333333;
-  margin-top: 5rem;
+  margin-top: 4rem; 
   text-align: left;
+  width: 100%;
 }
 
 
@@ -83,4 +84,64 @@ a.article-title:hover {
 
 .account-heading {
   font-size: 2.5rem;
+}
+
+/*About Page CSS*/
+#topBox {
+  background-color: #5f788a;
+  width: 100%;
+  height: 250px;
+  color: #ffffff;
+}
+
+p#topBoxText{
+  padding-top: 50px;
+  padding-left: 130px;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+#middleBox {
+  margin-top: 1px;
+  background-color: #517188;
+  padding-top: 60px;
+  padding-left: 130px;
+  color: #ffffff;
+  width: 100%;
+  height: 300px;
+}
+
+#middleBox h1 {
+  color: #ffffff;
+}
+
+#middleBoxTwo {
+  margin-top: 1px;
+  background-color: #5f788a;
+  padding: 60px;
+  color: #ffffff;
+  width: 100%;
+}
+
+#column {
+  float: left;
+  width: 33.33%;
+  border: 2px solid white;
+  padding: 10px;
+}
+
+#column h3 {
+  color: #fafafa;
+  text-align: center;
+}
+
+#column p{
+  width: 300px;
+  text-align: center;
+}
+
+#middleBoxTwo::after {
+  content: "";
+  display: table;
+  clear: both;
 }
