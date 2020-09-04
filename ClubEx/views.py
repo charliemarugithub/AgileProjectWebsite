@@ -36,6 +36,7 @@ def classes_tai_chi(request):
     return render(request, 'clubex/taichi.html', {'title': 'Tai Chi'})
 
 
+@login_required
 def plans(request):
     return render(request, 'clubex/plans.html',  {'title': 'Plans'})
 
