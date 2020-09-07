@@ -88,39 +88,42 @@ a.article-title:hover {
 
 /*About Page CSS*/
 #topBox {
-  background-color: #5f788a;
+  background-color: #ffffff;
   width: 100%;
   height: 250px;
-  color: #ffffff;
+  color: #454d4d;
 }
 
 p#topBoxText{
   padding-top: 50px;
   padding-left: 130px;
-  font-weight: bold;
+  font-weight: bold 700;
   font-size: xx-large;
+  font-family: Raleway;
 }
 
 #middleBox {
   margin-top: 1px;
   background-color: #517188;
   padding-top: 60px;
-  padding-left: 130px;
+  padding-left: 100px;
+  padding-right: 30px;
   color: #ffffff;
   width: 100%;
   height: 300px;
 }
 
 #middleBox h1 {
-  color: #ffffff;
+  color: #ff9600;
 }
 
 #middleBoxTwo {
   margin-top: 1px;
-  background-color: #5f788a;
+  background-color: #f2e6f2;
   padding: 60px;
-  color: #ffffff;
+  color: #ff9600;
   width: 100%;
+  font-family: Lato;
 }
 
 #column {
@@ -131,7 +134,7 @@ p#topBoxText{
 }
 
 #column h3 {
-  color: #fafafa;
+  color: #ff9600;
   text-align: center;
 }
 
@@ -144,4 +147,15 @@ p#topBoxText{
   content: "";
   display: table;
   clear: both;
+}
+
+#bottomBox {
+  margin-top: 1px;
+  background-color: #517188;
+  padding-top: 60px;
+  padding-left: 100px;
+  padding-right: 30px;
+  color: #ffffff;
+  width: 100%;
+  height: 300px;
 }
