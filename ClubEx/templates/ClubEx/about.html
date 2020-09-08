@@ -4,13 +4,15 @@
 
 <Link rel="stylesheet" href="{% static 'ClubEx/about.css' %}" type="text/css" >
 
-<div id="topBox"> 
+
+<div id="topBox">
     <p id="topBoxText">All you'll need to know about us.
         <br>
         <br>
         Any questions just ask.
     </p>
 </div>
+
 <div id="middleBox">
     <h1>About Page</h1>
     <p>Started back in the early 2010s just as the interest in online gyms came about.
@@ -20,7 +22,7 @@
         It just started out in a small rented place with a cheap camera and gym equipment and from this it then ended up taking the internet by storm.
         <br>
         <br>
-        From that point onwards we've just grown and in 2018 we moved to our now permanent larger area which has enabled us to hire more staff and get more programs for people to come and enjoy.  
+        From that point onwards we've just grown and in 2018 we moved to our now permanent larger area which has enabled us to hire more staff and get more programs for people to come and enjoy.
     </p>
 </div>
 
@@ -42,8 +44,9 @@
 <div id="bottomBox">
     <form action="">
         <input type="text">
-        <input type="submit" value="Join Now">
+        <input type="submit" href="{% url 'register' %}"  value="Join Now">
     </form>
 </div>
+
 
 {% endblock content %}
