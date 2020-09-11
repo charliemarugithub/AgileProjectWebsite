@@ -1,0 +1,87 @@
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+}
+}
+
+th, td {
+    border: 1px solid grey;
+
+}
+
+th, td {
+    text-align: center;
+    font-family: Raleway;
+}
+
+th {
+    padding: 15px;
+    background: #6b00e3;
+    font-size: 45px;
+    color: #ff9600;
+}
+
+td {
+    padding: 5px;
+    font-sie: 0.9em;
+}
+
+    .content-table tr:nth-child(even) {
+    background-color: #f2e6f2;
+}
+
+.content-table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.no-color {
+    background: #fafafa;
+    border: 0px;
+}
+
+.border-radius {
+    border-radius: 20px 20px 2px 2px;
+    border: 0px;
+}
+
+.buy-now {
+    background: #6b00e3;
+    font-size: 20px;
+    color: #ff9600;
+    border-radius: 2px 2px 20px 20px;
+    border: 0;
+}
+
+.buy-now a:hover {
+    color: #ff9600
+}
+
+.buy-now a {
+    color: #ff9600
+}
+
+.container {
+    text-align: center;
+}
+
+.box {
+    display: inline-block
+}
+
+.parent-div {
+    display: flex;
+    justify-content: center;
+    align-items; center;
+    margin: 40px;
+}
+
