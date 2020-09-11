@@ -3,6 +3,20 @@
 
 {% block content %}
 
+<style>
+       .container {
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items; center;
+
+      }
+
+      .content-section {
+        width: 100%;
+      }
+</style>
+
     <div class="content-section">
         <form method="POST">
             {% csrf_token %}
