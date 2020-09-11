@@ -4,24 +4,6 @@
 
 {% block content %}
 
-<style>
-       .container {
-        text-align: center;
-      }
-
-      .box {
-        display: inline-block
-      }
-
-      .parent-div {
-        display: flex;
-        justify-content: center;
-        align-items; center;
-        margin: 40px;
-      }
-
-</style>
-
     {% for i in results %}
         {% video i.video 'tiny' %}
         <p>{{ i.content }}</p>

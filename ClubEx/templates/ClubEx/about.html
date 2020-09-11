@@ -1,52 +1,7 @@
 {% extends "ClubEx/base.html" %}
-{% load static %}
+
 {% block content %}
 
-<Link rel="stylesheet" href="{% static 'ClubEx/about.css' %}" type="text/css" >
-
-
-<div id="topBox">
-    <p id="topBoxText">All you'll need to know about us.
-        <br>
-        <br>
-        Any questions just ask.
-    </p>
-</div>
-
-<div id="middleBox">
-    <h1>About Page</h1>
-    <p>Started back in the early 2010s just as the interest in online gyms came about.
-        <br>
-        <br>
-        We decided to take advantage of what was happening and get into the market sooner rather than later.
-        It just started out in a small rented place with a cheap camera and gym equipment and from this it then ended up taking the internet by storm.
-        <br>
-        <br>
-        From that point onwards we've just grown and in 2018 we moved to our now permanent larger area which has enabled us to hire more staff and get more programs for people to come and enjoy.
-    </p>
-</div>
-
-<div id="middleBoxTwo">
-    <div id="column">
-        <h3>Top-Ranked</h3>
-        <p>We're one of the most highly ranked gyms which offer either an in house experince or at home one</p>
-    </div>
-    <div id="column">
-        <h3>Excellent Trainers</h3>
-        <p>Have the choice of a wide selection of trainers and one which will suit your style of training and if you don't know then we'll be able to recommend one that might work with you.</p>
-    </div>
-    <div id="column">
-        <h3>Best Equipment</h3>
-        <p>We've got a wide range of equipment which is able to be used either at the gym or if you don't have any we're able to hire it out and if that's not what your after we even have workouts that don't require equipment</p>
-    </div>
-</div>
-
-<div id="bottomBox">
-    <form action="">
-        <input type="text">
-        <input type="submit" href="{% url 'register' %}"  value="Join Now">
-    </form>
-</div>
-
+<h1>About Page</h1>
 
 {% endblock content %}
