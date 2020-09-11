@@ -73,3 +73,7 @@ def payment10(request):
 
 def payment100(request):
     return render(request, 'clubex/payment100.html',  {'title': 'Payment Annually'})
+
+
+def weekly(request):
+    return render(request, 'clubex/weekly.html',  {'title': '1 Week Free'})

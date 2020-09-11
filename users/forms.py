@@ -24,3 +24,13 @@ class ProfileUpdateForm(forms.ModelForm):
     class Meta:
         model = Profile
         fields = ['image']
+
+
+class SubmissionUpdateForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = [
+            'weekly_subs',
+            'monthly_subs',
+            'annual_subs'
+        ]
