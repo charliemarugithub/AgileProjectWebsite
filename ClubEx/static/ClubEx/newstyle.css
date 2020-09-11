@@ -1,0 +1,116 @@
+body, html {
+    height: 100%;
+}
+
+#homebody{
+  text-align:center;
+}
+
+h1{
+  font-family:'Lato', sans-serif;
+  font-size:2.4em;
+  font-weight:700;
+  color:#540982;
+}
+
+h2{
+  font-family:'Lato', sans-serif;
+  font-size:1.5em;
+  font-weight:700;
+  color:#ff9600;
+}
+
+p{
+  font-family:'Roboto', sans-serif;
+  font-size:1.2em;
+  font-weight:300;
+}
+
+.section{
+  padding:70px 0;
+}
+
+.cta{
+  width:100%;
+  padding:25px;
+  background-color:#ff9600;
+}
+
+.cta p{
+  display:inline;
+  font-family:'Lato', sans-serif;
+  font-size:1.4em;
+  font-weight:700;
+  color:#fff;
+}
+
+.cta a{
+  margin-left:10px;
+  padding:10px;
+  text-decoration:none;
+  color:#fff;
+  background-color:#540982;
+  border-radius:10px;
+}
+
+.colouredbg{
+  background-color:#ededed;
+}
+
+ul{
+  list-style-type:none;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (headerimg.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../ClubEx/images/headerimg.jpg");
+  height: 400px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+#homeintro{
+  max-width:800px;
+}
+
+#homeclassul li{
+  display:inline-block;
+  margin:30px 30px 0 0;
+  max-width:280px;
+  vertical-align:top;
+}
+
+.classicon{
+  margin:0 auto 15px auto;
+  width:125px;
+  height:125px;
+  background-color:#540982;
+  border-radius:1000px;
+}
+
+#homeplansul li{
+  display:inline-block;
+  margin:30px 50px 0 0;
+  max-width:350px;
+  vertical-align:top;
+}
+
+.bignumbers{
+  font-family:'Lato', sans-serif;
+  font-size:5em;
+  font-weight:700;
+  color:#540982;
+}
