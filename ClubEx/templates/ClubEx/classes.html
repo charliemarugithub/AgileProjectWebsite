@@ -2,6 +2,84 @@
 
 {% block content %}
 
-<h1>Classes Page<h1>
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <Link rel="stylesheet" href="{% static 'ClubEx/style.css' %}" type="text/css" >
+    <Link rel="stylesheet" href="{% static 'ClubEx/newstyle.css' %}" type="text/css" >
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="hero-image">
+        <div class="hero-text">
+          <h3>Sweat up a storm.</h3>
+          <p><a href="../ClubEx/plans.html">Join Now</a></p>
+        </div>  
+    </div>
+    <div class="section">
+        <div class="container intro">
+          <h1>Find a class that's right for you.</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+    </div>
+    <div class="container">
+        <ul id="classportfolio">
+            <li>
+                <a href="../ClubEx/aerobics.html">
+                    <div class="portfolioimg" id="aerobicsimg"></div>
+                    <p>Aerobics</p>
+                </a>
+            </li>
+            <li>
+                <a href="../ClubEx/aerobics.html">
+                    <div class="portfolioimg" id="aerobicsimg"></div>
+                    <p>Boxing</p>
+                </a>
+            </li>
+            <li>
+                <a href="../ClubEx/aerobics.html">
+                    <div class="portfolioimg" id="aerobicsimg"></div>
+                    <p>Yoga</p>
+                </a>
+            </li>
+            <li>
+                <a href="../ClubEx/aerobics.html">
+                    <div class="portfolioimg" id="aerobicsimg"></div>
+                    <p>Pilates</p>
+                </a>
+            </li>
+            <li>
+                <a href="../ClubEx/aerobics.html">
+                    <div class="portfolioimg" id="aerobicsimg"></div>
+                    <p>Tai Chi</p>
+                </a>
+            </li>
+            <li>
+                <a href="../ClubEx/aerobics.html">
+                    <div class="portfolioimg" id="aerobicsimg"></div>
+                    <p>Spinning</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="cta">
+        <div class="container">
+          <p class="ctatext">Start your program today!</p>
+          <p><a href="../ClubEx/plans.html">Join Now</a></p>
+        </div>
+      </div>
+
+</body>
+</html>
 
 {% endblock content %}
