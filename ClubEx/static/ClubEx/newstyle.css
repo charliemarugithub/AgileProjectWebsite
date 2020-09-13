@@ -34,6 +34,11 @@ p{
   padding:70px 0;
 }
 
+.classsection{
+  margin:0;
+  padding:70px 0 50px 0;
+}
+
 .intro{
   max-width:800px;
   text-align:center;
@@ -79,7 +84,7 @@ ul{
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (headerimg.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../ClubEx/images/headerimg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../media/headerimg.jpg");
   height: 400px;
   background-position: center top;
   background-repeat: no-repeat;
@@ -94,7 +99,7 @@ ul{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color:#fff;
 }
 
 .hero-text h3{
@@ -185,5 +190,40 @@ sup{
 }
 
 #aerobicsimg{
-  background-image:url("../ClubEx/images/headerimg.jpg");
+  background-image:url("../../../media/headerimg.jpg");
+}
+
+/* Videos Pages */
+
+.videocontainer{
+  display:block;
+  margin:auto;
+  margin-bottom:70px;
+  width:800px;
+  height:400px;
+  background-color:#ededed;
+}
+
+#classtimes{
+  margin-left:10px;
+  width:auto;
+}
+
+td{
+  padding-right:10px;
+}
+
+#thumbnails li{
+  display:inline-block;
+  margin:10px;
+  margin-bottom:0;
+  max-width:150px;
+  width:100%;
+  height:200px;
+  background-image:url("../../../media/headerimg.jpg");
+  background-color:red;  
+}
+
+#aero1{
+  background-image:url("../../../media/headerimg.jpg");
 }
