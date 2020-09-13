@@ -1,6 +1,84 @@
 {% extends "ClubEx/base.html" %}
 
+{% load embed_video_tags %}
+
 {% block content %}
-<H1>Aerobics Page</H1>
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <Link rel="stylesheet" href="{% static 'ClubEx/style.css' %}" type="text/css" >
+    <Link rel="stylesheet" href="{% static 'ClubEx/newstyle.css' %}" type="text/css" >
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="classsection">
+        <div class="container intro">
+            <h1>Aerobics</h1>
+            <p>You’d like to learn Aerobics but not sure how? Well this quick 45 minute video will show you and have fun while doing it.</p>
+        </div>
+    </div>
+    <div class="videocontainer">
+        
+    </div>
+    <div class="section colouredbg">
+        <div class="container">
+            <div id="classtimes">
+                <h2>Class Times</h2>
+                <table>
+                    <tr>
+                        <td>Mon</td>
+                        <td>7:30pm - 8:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Tue</td>
+                        <td>7:30pm - 8:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Wed</td>
+                        <td>7:30pm - 8:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Thu</td>
+                        <td>7:30pm - 8:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Fri</td>
+                        <td>7:30pm - 8:00pm</td>
+                    </tr>
+                    <tr>
+                        <td>Sat</td>
+                        <td>7:30pm - 8:00pm</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="thumbnaildiv">
+                <ul id="thumbnails">
+                    <li id="aero1"></li>
+                    <li id="aero2"></li>
+                    <li id="aero3"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="cta">
+        <div class="container">
+          <p class="ctatext">Start your program today!</p>
+          <p><a href="{% url 'plans' %}">Join Now</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
 
 {% endblock content %}
