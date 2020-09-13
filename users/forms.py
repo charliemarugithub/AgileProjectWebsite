@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
-from .models import Profile
+from .models import Profile, Subscription
 
 
 class UserRegisterForm(UserCreationForm):
@@ -33,4 +33,30 @@ class SubmissionUpdateForm(forms.ModelForm):
             'weekly_subs',
             'monthly_subs',
             'annual_subs'
+        ]
+
+
+class SubscriptionForm(forms.ModelForm):
+    class Meta:
+        model = Subscription
+        fields = [
+            'firstName',
+            'lastName',
+            'username',
+            'sub_type',
+            'email',
+            'address',
+            'address2',
+            'state',
+            'country',
+            'zip',
+            'same_address',
+            'save_info',
+            'credit',
+            'debit',
+            'paypal',
+            'cc_name',
+            'cc_number',
+            'cc_expiration',
+            'cc_cvv',
         ]

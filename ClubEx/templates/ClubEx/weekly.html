@@ -39,7 +39,8 @@
     </div>
     <div class="col-md-8 order-md-1">
       <h4 class="mb-3">Billing address</h4>
-      <form class="needs-validation" novalidate>
+      <form method="POST" action="{% url 'weekly' %}" class="needs-validation" novalidate>
+        {% csrf_token %}
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="firstName">First name</label>
@@ -69,7 +70,18 @@
             </div>
           </div>
         </div>
-
+       <div class="mb-3">
+          <label for="sub_type">Subscription Type</label>
+          <select class="custom-select d-block w-100" id="sub_type" required>
+            <option value="">Choose...</option>
+            <option>Weekly $ Free</option>
+            <option>Monthly $10</option>
+            <option>Annual $100</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid Subscription.
+          </div>
+        </div>
         <div class="mb-3">
           <label for="email">Email <span class="text-muted">(Optional)</span></label>
           <input type="email" class="form-control" id="email" placeholder="you@example.com">
@@ -92,16 +104,6 @@
         </div>
 
         <div class="row">
-          <div class="col-md-5 mb-3">
-            <label for="country">Country</label>
-            <select class="custom-select d-block w-100" id="country" required>
-              <option value="">Choose...</option>
-              <option>New Zealand</option>
-            </select>
-            <div class="invalid-feedback">
-              Please select a valid country.
-            </div>
-          </div>
           <div class="col-md-4 mb-3">
             <label for="state">State</label>
             <select class="custom-select d-block w-100" id="state" required>
@@ -109,6 +111,16 @@
               <option>Auckland</option>
               <option>Christchurch</option>
             </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+          <div class="col-md-5 mb-3">
+            <label for="country">Country</label>
+            <select class="custom-select d-block w-100" id="country" required>
+              <option value="">Choose...</option>
+              <option>New Zealand</option>
+             </select>
             <div class="invalid-feedback">
               Please provide a valid City.
             </div>
@@ -193,6 +205,4 @@
       <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
         <script src="form-validation.js"></script>
 
-
-
-{% endblock content %}
+      {% endblock content %}
