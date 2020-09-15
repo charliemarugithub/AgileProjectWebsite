@@ -66,14 +66,3 @@ def video(request):
     )
     return render(request, 'clubex/videos.html', {'results': results})
 
-
-def payment10(request):
-    return render(request, 'clubex/payment10.html',  {'title': 'Payment Monthly'})
-
-
-def payment100(request):
-    return render(request, 'clubex/payment100.html',  {'title': 'Payment Annually'})
-
-
-def weekly(request):
-    return render(request, 'clubex/weekly.html',  {'title': '1 Week Free'})

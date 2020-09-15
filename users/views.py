@@ -1,9 +1,6 @@
 from django.shortcuts import render, redirect
-
 from django.contrib import messages
-
 from .forms import UserRegisterForm, ProfileUpdateForm, UserUpdateForm, SubscriptionForm
-
 from django.contrib.auth.decorators import login_required
 
 
@@ -43,12 +40,13 @@ def profile(request):
     return render(request, 'users/profile.html', context)
 
 
-def weekly(request):
+def subscribe(request):
+    form = SubscriptionForm()
     if request.method == 'POST':
         form = SubscriptionForm(request.POST or None)
         if form.is_valid():
             form.save()
-            print('got this far.')
-        return render(request, 'clubex/weekly.html',  {'title': '1 Week Free'})
+            messages.success(request, ('Thank you for your payment!'))
+        return render(request, 'clubex/classes.html', {'form': form})
     else:
-        return render(request, 'clubex/weekly.html',  {'title': '1 Week Free'})
+        return render(request, 'clubex/subscribe.html', {'form': form})
