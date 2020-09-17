@@ -46,7 +46,7 @@ def subscribe(request):
         form = SubscriptionForm(request.POST or None)
         if form.is_valid():
             form.save()
-            messages.success(request, ('Thank you for your payment!'))
+            messages.success(request, 'Thank you for your payment!')
         return render(request, 'clubex/classes.html', {'form': form})
     else:
         return render(request, 'clubex/subscribe.html', {'form': form})
