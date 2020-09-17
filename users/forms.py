@@ -49,7 +49,7 @@ class SubscriptionForm(forms.ModelForm):
 
     username = forms.CharField(
         required=True,
-        label="username",
+        label="Username",
         widget=forms.TextInput( attrs = {
                 'type':"text",
                 'placeholder':"Username",
@@ -163,6 +163,12 @@ class SubscriptionForm(forms.ModelForm):
         })
     )
 
+    date_of_signup = forms.DateTimeField(
+        required=True,
+        label="Date of Sign Up",
+        widget=forms.SelectDateWidget()
+    )
+
     class Meta:
         model = Subscription
         fields = [
@@ -178,4 +184,5 @@ class SubscriptionForm(forms.ModelForm):
             'postcode',
             'same_address',
             'save_info',
+            'date_of_signup',
         ]

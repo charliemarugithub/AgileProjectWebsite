@@ -1,6 +1,11 @@
 {% extends "ClubEx/base.html" %}
+{% load embed_video_tags %}
 
 {% block content %}
 <H1>Tai Chi Page</H1>
+
+    {% for i in obj %}
+        {% video i.video 'small' %}
+    {% endfor %}
 
 {% endblock content %}
