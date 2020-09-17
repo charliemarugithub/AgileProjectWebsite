@@ -55,6 +55,9 @@ def contact(request):
 def about(request):
     return render(request, 'clubex/about.html',  {'title': 'About Us'})
 
+def video(request):
+    obj=Video.objects.all()
+    return render(request,'aerobics.html',{'obj':obj})
 
 @login_required
 def video(request):
