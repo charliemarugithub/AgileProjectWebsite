@@ -40,7 +40,10 @@ def classes_spinning(request):
 
 @login_required
 def classes_tai_chi(request):
-    return render(request, 'clubex/taichi.html', {'title': 'Tai Chi'})
+    taichivids = Video.objects.filter(
+        Q(category__icontains="tai")
+    )
+    return render(request, 'clubex/taichi.html', {'taichivids': taichivids})
 
 
 @login_required
@@ -55,9 +58,6 @@ def contact(request):
 def about(request):
     return render(request, 'clubex/about.html',  {'title': 'About Us'})
 
-def video(request):
-    obj=Video.objects.all()
-    return render(request,'aerobics.html',{'obj':obj})
 
 @login_required
 def video(request):

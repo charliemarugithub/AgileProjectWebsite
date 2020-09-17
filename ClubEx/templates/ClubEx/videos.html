@@ -16,14 +16,14 @@
       .parent-div {
         display: flex;
         justify-content: center;
-        align-items; center;
+        align-items: center;
         margin: 40px;
       }
 
 </style>
 
     {% for i in results %}
-        <p>{{i.video %}}</p>
+        <p>{% video i.video %}</p>
         <p>{{ i.content }}</p>
     {% endfor %}
 {% endblock content %}
