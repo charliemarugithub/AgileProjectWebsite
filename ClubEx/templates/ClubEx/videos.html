@@ -10,21 +10,18 @@
   <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <Link rel="stylesheet" href="{% static 'ClubEx/searched_video.css' %}" type="text/css" >
 
-<div style="width: 400px; float:left; height:300px; margin:20px 20px 20px 0px">
-    {% for i in results %}
-        {% video i.video 'tiny' %}
 
-</div>
-<div style="width: 400px; float:left; height:300px; margin:50px">
-    <p>{{ i.content  }}</p>
-        <h3>Rate this video..</h3>
-        <x-star-rating>
-            <div class="star full"></div>
-            <div class="star full"></div>
-            <div class="star full"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-        </x-star-rating>
+   {% for i in results %}
+<div class="container">
+  <div class="row">
+    <div class="col-5">
+    {% video i.video 'tiny' %}
+    </div>
+
+      <div class="col-7">
+   <p>{{ i.content  }}</p>
+      </div>
+  </div>
 </div>
 
 

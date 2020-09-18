@@ -45,7 +45,7 @@ def classes_spinning(request):
 
 @login_required
 def classes_tai_chi(request):
-    obj = Video.objects.filter(category='Tai Chi')
+    obj = Video.objects.filter(category='Tai Chi' or 'taichi')
     return render(request, 'clubex/taichi.html', {'obj': obj})
 
 
