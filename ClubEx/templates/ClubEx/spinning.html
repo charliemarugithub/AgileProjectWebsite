@@ -2,9 +2,17 @@
 {% load embed_video_tags %}
 
 {% block content %}
-<H1>Spinning Page</H1>
-    {% for i in obj %}
-        {% video i.video 'small' %}
-    {% endfor %}
+   {% for i in obj %}
+<div class="container">
+  <div class="row">
+    <div class="col-5">
+    {% video i.video 'tiny' %}
+    </div>
 
+      <div class="col-7">
+   <p>{{ i.content  }}</p>
+      </div>
+  </div>
+</div>
+ {% endfor %}
 {% endblock content %}
