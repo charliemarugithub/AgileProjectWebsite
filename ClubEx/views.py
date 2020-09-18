@@ -15,7 +15,8 @@ def classes(request):
 
 @login_required
 def classes_boxing(request):
-    return render(request, 'clubex/boxing.html', {'title': 'Boxing'})
+    obj = Video.objects.filter(category='Boxing')
+    return render(request, 'clubex/boxing.html', {'obj': obj})
 
 
 @login_required
@@ -40,7 +41,10 @@ def classes_spinning(request):
 
 @login_required
 def classes_tai_chi(request):
-    return render(request, 'clubex/taichi.html', {'title': 'Tai Chi'})
+    taichivids = Video.objects.filter(
+        Q(category__icontains="tai")
+    )
+    return render(request, 'clubex/taichi.html', {'taichivids': taichivids})
 
 
 @login_required
