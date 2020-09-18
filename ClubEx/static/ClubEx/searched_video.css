@@ -7,25 +7,9 @@
 }
 
 .parent-div {
+    margin: 55px;
     display: flex;
     justify-content: center;
     align-items; center;
-    margin: 40px;
-}
 
-x-star-rating {
-    font-family: 'Ionicons';
-    font-size: 35px;
-    display: inline-flex;
-    cursor: pointer;
-}
-
-x-star-rating > .star::after {
-    content: '\f3ae';
-    color: #777;
-}
-
-x-star-rating > .star.full::after {
-    content: '\f2fc';
-    color: #fd0;
 }
