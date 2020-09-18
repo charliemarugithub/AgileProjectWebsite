@@ -107,7 +107,7 @@ class SubscriptionForm(forms.ModelForm):
 
     state = forms.ChoiceField(
         required=True,
-        label="State",
+        label="City",
         choices=(
             ('Choose', 'Choose'),
             ('Auckland', 'Auckland'),
