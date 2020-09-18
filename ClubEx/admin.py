@@ -4,9 +4,17 @@ from .models import Video
 
 
 class MyModelAdmin(AdminVideoMixin, admin.ModelAdmin):
-    pass
+    list_display = ('category',
+                    'video_name',
+                    'video',
+                    'content',
+                    )
+
+    def video(self, obj):
+        return obj.category
 
 
 admin.site.register(Video, MyModelAdmin)
+
 
 
