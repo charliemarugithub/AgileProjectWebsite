@@ -1,0 +1,48 @@
+{% extends "ClubEx/base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<Link rel="stylesheet" href="{% static 'ClubEx/form-validation.css' %}" type="text/css" >
+
+  <body class="bg-light">
+    <div class="container">
+  <div class="py-5 text-center">
+    <h2>Checkout form for {{ user.username }}</h2>
+    <p class="lead">Hi {{ user.username }}. Please check and fill out the following form to complete your subscription application. </p>
+  </div>
+    <div class="col-md-8 order-md-1">
+      <form method="post" action="/subscribe/" class="needs-validation">
+      {% csrf_token %}
+
+      {% for field in form %}
+          <div class="row">
+              <div class="col-md-10 mb-3">
+                  {{field.label_tag}}
+                  {{field}}
+              </div>
+          </div>
+
+      {% endfor %}
+          <div>
+              <h5>No Credit Card details required at this stage. Project Only!!</h5>
+          </div>
+       <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Pay Now!</button>
+       </form>
+    </div>
+  </div>
+<script type="text/javascript">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+      <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="form-validation.js"></script>
+
+      {% endblock content %}
