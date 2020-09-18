@@ -4,16 +4,102 @@
 
 {% load static %}
 
-<Link rel="stylesheet" href="{% static 'ClubEx/style.css' %}" type="text/css" >
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <Link rel="stylesheet" href="{% static 'ClubEx/style.css' %}" type="text/css" >
+    <Link rel="stylesheet" href="{% static 'ClubEx/newstyle.css' %}" type="text/css" >
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
 
-    <div class="col-md-12">
-        <div class="jumbotron jumbotron-fluid">
-          <div class="container">
-            <h1 class="display-4">Hello {{ user.username }}</h1>
-            <p class="lead">For all your fitness needs, feel free to browse around our site.</p>
-          </div>
-        </div>
+<body id="homebody">
+  <div class="hero-image">
+    <div class="hero-text">
+      <h3>Be an inspiration.</h3>
+      <p><a href="{% url 'plans' %}">Join Now</a></p>
+    </div>  
+  </div>
+  <div class="section">
+    <div class="container intro">
+      <h1>#1 Gym in New Zealand</h1>
+      <p>Interested in joining a gym but not a fan of the hussle and bustle of a gym. You’ve come to the right place and we offer a wide range of activities and all of these can be done in the safety of your own home.</p>
+      <p>Just bellow you’ll be able to see what classes we offer on hand and your able to access any of them of anytime from anywhere in the world. If your interested continue reading as we’ve got an offer just for you.</p> 
+      <p>The amazing offer we have is two plans which are either monthly or yearly which your able to cancel at anytime during your time with us. All but two are able to be done at home without equipment or if you’re a gym bunny then your able to be at the gym and do these from any smart device you have (excludes smart wearables).</p>
     </div>
-
+  </div>
+  <div class="section colouredbg">
+    <div class="container">
+      <h1>Our Classes</h1>
+      <ul id="homeclassul">
+        <li>
+          <div class="classicon"></div>
+          <h2>Aerobics</h2>
+          <p>This is a form of physical exercise that combines rhythmic aerobic exercise with stretching and strength training routines with the goal of improving all elements of fitness.</p>
+        </li>
+        <li>
+          <div class="classicon"></div>
+          <h2>Boxing</h2>
+          <p>The combat sport which involves punching a padded surface or another person. This involves wearing protective gloves and if your interested we can offer ways into amateur boxing.</p>
+        </li>
+        <li>
+          <div class="classicon"></div>
+          <h2>Yoga</h2>
+          <p>A group of physical, mental and spiritual practices or disciplines which originated in ancient India. This is a type of exercise which moves the body into various positions in order to become more fit or flexible, to improve your breathing, and to relax your mind.</p>
+        </li>
+        <li>
+          <div class="classicon"></div>
+          <h2>Pilates</h2>
+          <p>Similar to Yoga but wanting to move more then Pilates is for you and this will keep going at a steady pace while encompassing the similar actions of Yoga.</p>
+        </li>
+        <li>
+          <div class="classicon"></div>
+          <h2>Tai Chi</h2>
+          <p>A Chinese martial art practiced for both its defence training, its health benefits and meditation, if your after something that ties martial arts and meditation then this is for you since it can all be done anywhere at any time.</p>
+        </li>
+        <li>
+          <div class="classicon"></div>
+          <h2>Spinning</h2>
+          <p>This is indoor cycling and is a form of exercise which focuses on endurance, strength, intervals, high intensity and recovery. If your not one who likes biking in the elements then this is the one for you.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="cta">
+    <div class="container">
+      <p class="ctatext">Would you like to learn more?</p>
+      <p><a href="{% url 'classes' %}">Classes</a></p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <h1>Plans</h1>
+      <ul id="homeplansul">
+        <li>
+          <div class="bignumbers"><sup>$</sup>10</div>
+          <h2>Per Month</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </li>
+        <li>
+          <div class="bignumbers"><sup>$</sup>100</div>
+          <h2>Per Year</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="cta">
+    <div class="container">
+      <p class="ctatext">Would you like to learn more?</p>
+      <p><a href="{% url 'plans' %}">Plans</a></p>
+    </div>
+  </div>
+</body>
+</html>
 {% endblock content %}

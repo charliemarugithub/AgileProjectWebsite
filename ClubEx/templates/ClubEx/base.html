@@ -13,6 +13,8 @@
 
     <Link rel="stylesheet" href="{% static 'ClubEx/style.css' %}" type="text/css" >
 
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&family=Roboto:wght@300;400;700&family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+      
     {% if title %}
         <title>{{ title }}</title>
     {% else %}
@@ -24,7 +26,7 @@
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container">
-          <a class="navbar-brand mr-4" href="/">Club Ex</a>
+          <a class="navbar-brand mr-4" href="/">Club<span class="orange">Ex</span></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -32,10 +34,10 @@
             <div class="navbar-nav mr-auto">
               <a class="nav-item nav-link" href="{% url 'classes' %}">Classes</a>
               <a class="nav-item nav-link" href="{% url 'plans' %}">Subscriptions</a>
-              <a class="nav-item nav-link" href="{% url 'about' %}">About Us</a>
-              <a class="nav-item nav-link" href="{% url 'contact' %}">Contact Us</a>
+              <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
+              <a class="nav-item nav-link" href="{% url 'contact' %}">Contact</a>
             </div>
-              <form action="{% url 'videos' %}" method="get">
+              <form id="searchbar" action="{% url 'videos' %}" method="get">
                   <input name="q" type="text" placeholder="Search..." aria-label="Search" autocomplete="on">
                   <button class="btn btn-outline-success my-2 my-sm-0" type=submit>Search</button>
               </form>
