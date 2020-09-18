@@ -8,7 +8,6 @@ def index(request):
     return render(request, 'clubex/index.html', {'title': 'Welcome to Gym App'})
 
 
-@login_required
 def classes(request):
     return render(request, 'clubex/classes.html', {'title': 'Classes'})
 
