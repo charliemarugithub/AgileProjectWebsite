@@ -15,7 +15,8 @@ def classes(request):
 
 @login_required
 def classes_boxing(request):
-    return render(request, 'clubex/boxing.html', {'title': 'Boxing'})
+    obj = Video.objects.filter(category='Boxing')
+    return render(request, 'clubex/boxing.html', {'obj': obj})
 
 
 @login_required
