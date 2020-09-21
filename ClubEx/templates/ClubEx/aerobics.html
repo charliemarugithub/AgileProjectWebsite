@@ -28,9 +28,16 @@
             <p>You’d like to learn Aerobics but not sure how? Well this quick 45 minute video will show you and have fun while doing it.</p>
         </div>
     </div>
-    {% for i in obj %}
-        {% video i.video 'small' %}
-    {% endfor %}
+    <div class="container">
+        <div class="row">
+          <div class="col-5">
+          {% video i.video 'tiny' %}
+          </div>
+            <div class="col-7">
+         <p>{{ i.content  }}</p>
+            </div>
+        </div>
+      </div>
     <iframe class="video" width="800" height="450" src="https://www.youtube.com/embed/1EvZgd9onRY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="section colouredbg">
         <div class="container">
