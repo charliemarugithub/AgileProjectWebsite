@@ -170,7 +170,8 @@ class SubscriptionForm(forms.ModelForm):
         label="Date of Sign Up",
         initial=datetime.datetime.now(),
         widget=forms.SelectDateWidget(attrs={
-            'disabled': True,
+            'disabled': False,
+            'readonly': True,
 
         })
 
