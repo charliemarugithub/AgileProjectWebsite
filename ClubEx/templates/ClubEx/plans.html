@@ -3,7 +3,12 @@
 {% block content %}
 
     <Link rel="stylesheet" href="{% static 'ClubEx/plans.css' %}" type="text/css" >
-
+    <Link rel="stylesheet" href="{% static 'ClubEx/newstyle.css' %}" type="text/css" >
+    <div class="hero-image">
+        <div class="hero-text">
+          <h3>Choose your plan!</h3>
+        </div>
+    </div>
         <div class="parent-div">
          <table class="content-table" style="max-width:100%">
               <tr class="noborder">
@@ -69,5 +74,10 @@
               </tr>
          </table>
         </div>
-
+        <div class="cta">
+            <div class="container">
+              <p class="ctatext">Want to know more?</p>
+              <p><a href="/contact/">Contact Us</a></p>
+            </div>
+          </div>
 {% endblock content %}
