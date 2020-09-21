@@ -18,9 +18,9 @@
 </head>
 
 <body>
-    <div class="hero-image">
+    <div class="hero-image" id="aboutheroimg">
         <div class="hero-text">
-          <h3>All you'll need to know about us.</h3>
+          <h3>All you need to know about us.</h3>
           <h3>Any questions just ask.</h3>
           <p><a href="{% url 'plans' %}">Join Now</a></p>
         </div>  
@@ -37,17 +37,23 @@
         <div class="container">
             <ul id="aboutul">
                 <li>
-                    <div class="classicon"></div>
+                    <div class="classicon">
+                        <img src="../../../media/number-one.svg" alt="Number One icon" width="90" height="90">
+                    </div>
                     <h2>Top-Ranked</h2>
                     <p>We're one of the most highly ranked gyms which offer either an in house experince or at home one</p>
                 </li>
                 <li>
-                    <div class="classicon"></div>
+                    <div class="classicon">
+                        <img src="../../../media/trainer.svg" alt="Trainer icon" width="90" height="90">
+                    </div>
                     <h2>Excellent Trainers</h2>
                     <p>Have the choice of a wide selection of trainers and one which will suit your style of training and if you don't know then we'll be able to recommend one that might work with you.</p>
                 </li>
                 <li>
-                    <div class="classicon"></div>
+                    <div class="classicon">
+                        <img src="../../../media/spinning.svg" alt="Spinning icon" width="90" height="90">
+                    </div>
                     <h2>Best Equipment</h2>
                     <p>We've got a wide range of equipment which is able to be used either at the gym or if you don't have any we're able to hire it out and if that's not what your after we even have workouts that don't require equipment</p>
                 </li>

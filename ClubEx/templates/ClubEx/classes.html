@@ -20,9 +20,9 @@
 </head>
 
 <body>
-    <div class="hero-image">
+    <div class="hero-image" id="classesheroimg">
         <div class="hero-text">
-          <h3>Sweat up a storm.</h3>
+          <h3><span class="orange">Sweat up a storm.</span></h3>
           <p><a href="{% url 'plans' %}">Join Now</a></p>
         </div>  
     </div>
@@ -36,37 +36,49 @@
         <ul id="classportfolio">
             <li>
                 <a href="{% url 'classes_aerobics' %}">
-                    <div class="portfolioimg" id="aerobicsimg"></div>
+                    <div class="portfolioimg">
+                        <img src="../../../media/aerobics.jpg" alt="Aerobics" width="320" height="200">
+                    </div>
                     <p>Aerobics</p>
                 </a>
             </li>
             <li>
                 <a href="{% url 'classes_boxing' %}">
-                    <div class="portfolioimg" id="aerobicsimg"></div>
+                    <div class="portfolioimg">
+                        <img src="../../../media/boxing.jpg" alt="Boxing" width="320" height="200">
+                    </div>
                     <p>Boxing</p>
                 </a>
             </li>
             <li>
                 <a href="{% url 'classes_yoga' %}">
-                    <div class="portfolioimg" id="aerobicsimg"></div>
+                    <div class="portfolioimg">
+                        <img src="../../../media/yoga.jpg" alt="Yoga" width="320" height="200">
+                    </div>
                     <p>Yoga</p>
                 </a>
             </li>
             <li>
                 <a href="{% url 'classes_pilates' %}">
-                    <div class="portfolioimg" id="aerobicsimg"></div>
+                    <div class="portfolioimg">
+                        <img src="../../../media/pilates.jpg" alt="Pilates" width="320" height="200">
+                    </div>
                     <p>Pilates</p>
                 </a>
             </li>
             <li>
                 <a href="{% url 'classes_tai_chi' %}">
-                    <div class="portfolioimg" id="aerobicsimg"></div>
+                    <div class="portfolioimg">
+                        <img src="../../../media/taichi.jpg" alt="Tai Chi" width="320" height="200">
+                    </div>
                     <p>Tai Chi</p>
                 </a>
             </li>
             <li>
                 <a href="{% url 'classes_spinning' %}">
-                    <div class="portfolioimg" id="aerobicsimg"></div>
+                    <div class="portfolioimg" id="spinningimg">
+                        <img src="../../../media/old_sweaty_dudes.jpg" alt="Spinning" width="320" height="200">
+                    </div>
                     <p>Spinning</p>
                 </a>
             </li>
