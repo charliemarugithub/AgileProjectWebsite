@@ -26,7 +26,7 @@ th, td {
 
 th {
     padding: 15px;
-    background: #6b00e3;
+    background: #540982;
     font-size: 45px;
     color: #ff9600;
 }
@@ -55,7 +55,7 @@ td {
 }
 
 .buy-now {
-    background: #6b00e3;
+    background: #540982;
     font-size: 20px;
     color: #ff9600;
     border-radius: 2px 2px 20px 20px;
@@ -82,6 +82,6 @@ td {
     display: flex;
     justify-content: center;
     align-items; center;
-    margin: 40px;
+    margin: 55px;
 }
 

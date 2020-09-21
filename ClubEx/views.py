@@ -8,7 +8,6 @@ def index(request):
     return render(request, 'clubex/index.html', {'title': 'Welcome to Gym App'})
 
 
-@login_required
 def classes(request):
     return render(request, 'clubex/classes.html', {'title': 'Classes'})
 
@@ -21,30 +20,32 @@ def classes_boxing(request):
 
 @login_required
 def classes_pilates(request):
-    return render(request, 'clubex/pilates.html', {'title': 'Pilates'})
+    obj = Video.objects.filter(category='Pilates')
+    return render(request, 'clubex/pilates.html', {'obj': obj })
 
 
 @login_required
 def classes_aerobics(request):
-    return render(request, 'clubex/aerobics.html', {'title': 'Aerobics'})
+    obj = Video.objects.filter(category='Aerobics')
+    return render(request, 'clubex/aerobics.html', {'obj': obj })
 
 
 @login_required
 def classes_yoga(request):
-    return render(request, 'clubex/yoga.html', {'title': 'Yoga'})
+    obj = Video.objects.filter(category='Yoga')
+    return render(request, 'clubex/yoga.html', {'obj': obj })
 
 
 @login_required
 def classes_spinning(request):
-    return render(request, 'clubex/spinning.html', {'title': 'Spinning'})
+    obj = Video.objects.filter(category='Spinning')
+    return render(request, 'clubex/spinning.html', {'obj': obj})
 
 
 @login_required
 def classes_tai_chi(request):
-    taichivids = Video.objects.filter(
-        Q(category__icontains="tai")
-    )
-    return render(request, 'clubex/taichi.html', {'taichivids': taichivids})
+    obj = Video.objects.filter(category='Tai Chi' or 'taichi')
+    return render(request, 'clubex/taichi.html', {'obj': obj})
 
 
 @login_required
@@ -70,10 +71,3 @@ def video(request):
     )
     return render(request, 'clubex/videos.html', {'results': results})
 
-
-def payment10(request):
-    return render(request, 'clubex/payment10.html',  {'title': 'Payment Monthly'})
-
-
-def payment100(request):
-    return render(request, 'clubex/payment100.html',  {'title': 'Payment Annually'})

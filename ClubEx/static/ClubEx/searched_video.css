@@ -1,0 +1,15 @@
+.container {
+    text-align: left;
+}
+
+.box {
+    display: inline-block
+}
+
+.parent-div {
+    margin: 55px;
+    display: flex;
+    justify-content: center;
+    align-items; center;
+
+}
