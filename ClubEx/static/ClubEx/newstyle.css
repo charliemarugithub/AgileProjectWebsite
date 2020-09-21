@@ -3,10 +3,7 @@
 body, html {
     height: 100%;
     margin-top: 4rem;
-}
-
-#homebody{
-  text-align:center;
+    text-align:center;
 }
 
 h1{
@@ -15,6 +12,7 @@ h1{
   font-size:2.4em;
   font-weight:700;
   color:#540982;
+  font-variant-ligatures: none;
 }
 
 h2{
@@ -22,6 +20,7 @@ h2{
   font-size:1.5em;
   font-weight:700;
   color:#ff9600;
+  font-variant-ligatures: none;
 }
 
 p{
@@ -30,7 +29,7 @@ p{
   font-weight:300;
 }
 
-a{
+a, a:hover{
   text-decoration:none;
 }
 
@@ -38,6 +37,15 @@ a{
   margin:0;
   padding:60px 0;
 }
+
+.row-full{
+  width: 100%;
+  position: relative;
+  margin-left: -50vw;
+  height: 100px;
+  margin-top: 100px;
+  left: 50%;
+ }
 
 .intro{
   max-width:800px;
@@ -82,15 +90,36 @@ ul{
   list-style-type:none;
 }
 
-/* The hero image */
+/* The home page */
+
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (headerimg.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../media/headerimg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   height: 400px;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+#homeheroimg{
+  background-image:url("../../../media/headerimg.jpg");
+}
+
+#classesheroimg{
+  background-image:url("../../../media/Group-fitness-spin.jpg");
+}
+
+#plansheroimg{
+  background-image:url("../../../media/aerobics.jpg");
+}
+
+#aboutheroimg{
+  background-image:url("../../../media/pushups.jpg");
+}
+
+#contactheroimg{
+  background-image:url("../../../media/old_sweaty_dudes.jpg");
 }
 
 /* Place text in the middle of the image */
@@ -122,11 +151,24 @@ ul{
 }
 
 .classicon{
+  position:relative;
   margin:0 auto 15px auto;
-  width:125px;
-  height:125px;
+  width:150px;
+  height:150px;
   background-color:#540982;
   border-radius:1000px;
+  vertical-align:center;
+}
+
+.classicon img{
+  max-height: 100%;  
+  max-width: 100%; 
+  position: absolute;  
+  top: 0;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  margin: auto;
 }
 
 #homeplansul li{
@@ -192,10 +234,6 @@ sup{
   background-color:#540982;
 }
 
-#aerobicsimg{
-  background-image:url("../../../media/headerimg.jpg");
-}
-
 /* Videos Pages */
 
 .video{
@@ -228,6 +266,16 @@ td{
   background-image:url("../../../media/headerimg.jpg");
 }
 
+/* Individual Classes Page */
+
+.videos li{
+  display:inline-block;
+  margin-bottom:25px;
+  max-width:420px;
+  width:100%;
+  text-align:left;
+}
+
 /* About Page */
 
 #aboutul{
@@ -236,6 +284,10 @@ td{
 }
 
 /* Contact Page */
+
+#contactcontainer{
+  text-align:left;
+}
 
 #contactcontainer li{
   display:inline-block;
