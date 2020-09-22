@@ -4,6 +4,7 @@ from . import views
 
 from .views import video
 
+
 urlpatterns = [
     path('', views.index, name='index'),
     path('about/', views.about, name='about'),
@@ -17,5 +18,6 @@ urlpatterns = [
     path('classes/taichi/', views.classes_tai_chi, name='classes_tai_chi'),
     path('classes/aerobics/', views.classes_aerobics, name='classes_aerobics'),
     path('classes/spinning/', views.classes_spinning, name='classes_spinning'),
-
+    
+ 
 ]
