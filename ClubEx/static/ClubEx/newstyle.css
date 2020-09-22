@@ -3,7 +3,6 @@
 body, html {
     height: 100%;
     margin-top: 4rem;
-    text-align:center;
 }
 
 h1{
@@ -38,14 +37,9 @@ a, a:hover{
   padding:60px 0;
 }
 
-.row-full{
-  width: 100%;
-  position: relative;
-  margin-left: -50vw;
-  height: 100px;
-  margin-top: 100px;
-  left: 50%;
- }
+.container{
+  text-align:center;
+}
 
 .intro{
   max-width:800px;
@@ -142,6 +136,7 @@ ul{
 }
 
 /* Home page */
+
 #homeclassul li, #aboutul li{
   display:inline-block;
   margin:30px 30px 0 0;
@@ -262,14 +257,9 @@ td{
   background-color:red;  
 }
 
-#aero1{
-  background-image:url("../../../media/headerimg.jpg");
-}
-
 /* Individual Classes Page */
 
 .videos li{
-  display:inline-block;
   margin-bottom:25px;
   max-width:420px;
   width:100%;
