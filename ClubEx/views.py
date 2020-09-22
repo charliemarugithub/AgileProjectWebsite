@@ -2,8 +2,6 @@ from django.shortcuts import render
 from .models import Video
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
-from hitcount.models import HitCount
-from hitcount.views import HitCountMixin
 
 
 def index(request):
@@ -73,14 +71,3 @@ def video(request):
     )
     return render(request, 'clubex/videos.html', {'results': results})
 
-
-# first get the related HitCount object for your model object
-hit_count = HitCount.objects.get_for_object(your_model_object)
-
-# next, you can attempt to count a hit and get the response
-# you need to pass it the request object as well
-hit_count_response = HitCountMixin.hit_count(request, hit_count)
-
-# your response could look like this:
-# UpdateHitCountResponse(hit_counted=True, hit_message='Hit counted: session key')
-# UpdateHitCountResponse(hit_counted=False, hit_message='Not counted: session key has active hit')
