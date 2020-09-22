@@ -1,7 +1,10 @@
 {% extends "ClubEx/base.html" %}
 {% load embed_video_tags %}
+{% load static %}
 
 {% block content %}
+
+    <Link rel="stylesheet" href="{% static 'ClubEx/newstyle.css' %}" type="text/css" >
 
    {% for i in obj %}
 <div class="container">
