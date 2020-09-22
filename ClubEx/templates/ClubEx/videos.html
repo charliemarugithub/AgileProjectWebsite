@@ -1,5 +1,5 @@
 {% extends "ClubEx/base.html" %}
-
+{% load embed_video_tags %}
 {% load static %}
 
 {% block content %}
@@ -9,16 +9,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <Link rel="stylesheet" href="{% static 'ClubEx/searched_video.css' %}" type="text/css" >
-
+  <Link rel="stylesheet" href="{% static 'ClubEx/newstyle.css' %}" type="text/css" >
 
    {% for i in results %}
 <div class="container">
   <div class="row">
-    <div class="col-1">
-        {{ i.category }}
-    </div>
-    <div class="col-4">
-        {{ i.video_name }}
+
+    <div class="col-5">
+        {% video i.video 'tiny' %}
     </div>
 
     <div class="col-7">
