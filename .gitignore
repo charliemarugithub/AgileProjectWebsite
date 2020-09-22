@@ -1,2 +1,21 @@
 
 *.pyc
+*.pyc
+*.pyc
+*.pyc
+ClubEx/__pycache__/__init__.cpython-38.pyc
+ClubEx/__pycache__/admin.cpython-38.pyc
+ClubEx/__pycache__/apps.cpython-38.pyc
+ClubEx/__pycache__/models.cpython-38.pyc
+ClubEx/__pycache__/urls.cpython-38.pyc
+ClubEx/__pycache__/views.cpython-38.pyc
+NewAgileProjectRepo/__pycache__/__init__.cpython-38.pyc
+NewAgileProjectRepo/__pycache__/settings.cpython-38.pyc
+NewAgileProjectRepo/__pycache__/urls.cpython-38.pyc
+users/__pycache__/__init__.cpython-38.pyc
+users/__pycache__/admin.cpython-38.pyc
+*.pyc
+users/__pycache__/apps.cpython-38.pyc
+users/__pycache__/forms.cpython-38.pyc
+users/__pycache__/models.cpython-38.pyc
+users/__pycache__/views.cpython-38.pyc
