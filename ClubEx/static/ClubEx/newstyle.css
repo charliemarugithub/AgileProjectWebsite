@@ -206,6 +206,7 @@ sup{
   max-width:320px;
   width:100%;
   text-align:left;
+  vertical-align:top;
 }
 
 .portfolioimg{
@@ -264,6 +265,16 @@ td{
   max-width:420px;
   width:100%;
   text-align:left;
+}
+
+/* Video Detaisl Page */
+
+#vidcontainer{
+  text-align:left;
+}
+
+#vidcontainer h1{
+  margin-bottom:30px;
 }
 
 /* About Page */
