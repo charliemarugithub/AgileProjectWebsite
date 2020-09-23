@@ -22,14 +22,14 @@
 <body>
   <div class="section">
       <div class="container" id="vidcontainer">
+        <h1>{{ obj.video_name }}</h1>
         <div class="videobox">
           {% video obj.video '900x500' %}
         </div>
         <div class="videocontent">
-          <h1>{{ obj.video_name }}</h1>
           <p>{{ obj.content  }}</p>
           <div class="rw-ui-container"></div>
-          <h5>Views: {{ obj.video_views }}</h5>
+          <h5>Number of views: {{ obj.video_views }}</h5>
         </div>
       </div>
   </div>

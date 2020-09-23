@@ -273,12 +273,8 @@ td{
   text-align:left;
 }
 
-.videobox, .rw-ui-container{
-  margin-bottom:15px;
-}
-
-.videocontent h1{
-  margin-bottom:5px;
+#vidcontainer h1{
+  margin-bottom:30px;
 }
 
 /* About Page */
