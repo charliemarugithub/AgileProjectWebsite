@@ -17,6 +17,7 @@ urlpatterns = [
     path('classes/pilates/', views.classes_pilates, name='classes_pilates'),
     path('classes/taichi/', views.classes_tai_chi, name='classes_tai_chi'),
     path('classes/aerobics/', views.classes_aerobics, name='classes_aerobics'),
+    path('<int:id>', views.classes_aerobics_details, name='video_details'),
     path('classes/spinning/', views.classes_spinning, name='classes_spinning'),
     
  

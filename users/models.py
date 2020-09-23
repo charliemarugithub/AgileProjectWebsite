@@ -35,14 +35,6 @@ class Subscription(models.Model):
     same_address = models.BooleanField()
     save_info = models.BooleanField()
     date_of_signup = models.DateField()
-    '''
-    credit = models.BooleanField()
-    debit = models.BooleanField()
-    paypal = models.BooleanField()
-    cc_name = models.CharField(max_length=100)
-    cc_number = models.CharField(max_length=20)
-    cc_expiration = models.CharField(max_length=10)
-    cc_cvv = models.IntegerField()
-    '''
+
     def __str__(self):
         return f'{self.firstName} {self.lastName} {self.username} {self.sub_type} {self.state} {self.date_of_signup}'

@@ -8,5 +8,8 @@ class Video(models.Model):
     video = EmbedVideoField()
     content = models.TextField()
 
+    class Meta:
+        ordering = ('-video_name',)
+
     def __str__(self):
         return self.video_name

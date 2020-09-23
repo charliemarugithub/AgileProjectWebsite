@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Video
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
@@ -21,19 +21,24 @@ def classes_boxing(request):
 @login_required
 def classes_pilates(request):
     obj = Video.objects.filter(category='Pilates')
-    return render(request, 'clubex/pilates.html', {'obj': obj })
+    return render(request, 'clubex/pilates.html', {'obj': obj})
 
 
 @login_required
 def classes_aerobics(request):
     obj = Video.objects.filter(category='Aerobics')
-    return render(request, 'clubex/aerobics.html', {'obj': obj })
+    return render(request, 'clubex/aerobics.html', {'obj': obj})
+
+
+def classes_aerobics_details(request, id):
+    obj = get_object_or_404(Video, pk=id)
+    return render(request, 'clubex/video_details.html', {'obj': obj})
 
 
 @login_required
 def classes_yoga(request):
     obj = Video.objects.filter(category='Yoga')
-    return render(request, 'clubex/yoga.html', {'obj': obj })
+    return render(request, 'clubex/yoga.html', {'obj': obj})
 
 
 @login_required
@@ -70,4 +75,5 @@ def video(request):
         Q(content__icontains=query)
     )
     return render(request, 'clubex/videos.html', {'results': results})
+
 
