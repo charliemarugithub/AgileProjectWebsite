@@ -1,5 +1,5 @@
 {% extends "ClubEx/base.html" %}
-{% load embed_video_tags %}
+
 {% load static %}
 
 {% block content %}
@@ -14,17 +14,15 @@
    {% for i in results %}
 <div class="container">
   <div class="row">
+          <div class="col-5">
+              <a href=" {% url 'video_details' i.id %}">{{ i.video_name }}</a>
+          </div>
 
-    <div class="col-5">
-        {% video i.video 'tiny' %}
-    </div>
-
-    <div class="col-7">
-       <p>{{ i.content  }}</p>
-    </div>
+          <div class="col-7">
+              <p>{{ i.content  }}</p>
+          </div>
   </div>
 </div>
-
 
     {% endfor %}
 

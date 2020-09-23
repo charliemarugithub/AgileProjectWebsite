@@ -94,6 +94,10 @@ def video(request):
         Q(video_name__icontains=query) |
         Q(content__icontains=query)
     )
+
     return render(request, 'clubex/videos.html', {'results': results})
 
 
+def video_details(request, id):
+    obj = get_object_or_404(Video, pk=id)
+    return render(request, 'clubex/video_details.html', {'obj': obj})
