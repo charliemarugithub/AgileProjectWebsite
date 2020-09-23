@@ -4,9 +4,9 @@
 
 {% block content %}
 
-<h3> {{ obj.video_name }} </h3>
 
     <div class="container">
+      <h3> {{ obj.video_name }} </h3>
       <div class="row">
         <div class="col-5">
              {% video obj.video 'tiny' %}
@@ -15,6 +15,7 @@
         <div class="col-7">
             <p>{{ obj.content  }}</p>
             <div class="rw-ui-container"></div>
+            <h6>Number of views: {{ obj.video_views }}</h6>
         </div>
       </div>
     </div>
