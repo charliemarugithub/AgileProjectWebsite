@@ -4,22 +4,42 @@
 
 {% block content %}
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <Link rel="stylesheet" href="{% static 'ClubEx/style.css' %}" type="text/css" >
     <Link rel="stylesheet" href="{% static 'ClubEx/newstyle.css' %}" type="text/css" >
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
 
-   {% for i in obj %}
-<div class="container">
-  <div class="row">
-          <div class="col-5">
-              <a href=" {% url 'video_details' i.id %}">{{ i.video_name }}</a>
-          </div>
-
-          <div class="col-7">
-              <p>{{ i.content  }}</p>
-          </div>
+<body>
+  <div class="section">
+      <div class="container intro">
+        <h1>Pilates</h1>
+        <p>Similar to Yoga but wanting to move more then Pilates is for you and this will keep going at a steady pace while encompassing the similar actions of Yoga.</p>
+      </div>
   </div>
-</div>
- {% endfor %}
-
+  <div class="container">
+      <ul id="classportfolio">
+        {% for i in obj %}
+          <li>
+              <a href=" {% url 'video_details' i.id %}">
+                  <div class="portfolioimg">
+                      <img src="{{ i.video_thumbnail.url }}" alt="#" width="320" height="200">
+                  </div>
+                  <p>{{ i.video_name }}</p>
+              </a>
+          </li>
+        {% endfor %}  
+      </ul>
+  </div>
   <div class="cta">
     <div class="container">
       <p class="ctatext">Would you like to learn more?</p>
@@ -27,5 +47,7 @@
     </div>
   </div>
 
+</body>
+</html>
 
 {% endblock content %}
