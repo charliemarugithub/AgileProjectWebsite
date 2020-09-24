@@ -23,6 +23,11 @@
         <div class="media-body">
           <h2 class="account-heading">{{ user.username }}</h2>
           <p class="text-secondary">{{ user.email }}</p>
+          {% if user.username == 'admin'  %}
+                <a href="{% url 'stats' %}">View Statistics Page</a>
+          {% else %}
+                <p>No Rights To View Statistics Page</p>
+          {% endif %}
         </div>
       </div>
       <form method="POST" enctype="multipart/form-data">
