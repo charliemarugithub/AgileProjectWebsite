@@ -79,6 +79,12 @@ def plans(request):
     return render(request, 'clubex/plans.html',  {'title': 'Plans'})
 
 
+@login_required
+def stats(request):
+    obj = Video.objects.all
+    return render(request, 'clubex/stats.html', {'obj': obj})
+
+
 def contact(request):
     return render(request, 'clubex/contact.html',  {'title': 'Contacts'})
 

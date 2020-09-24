@@ -11,6 +11,7 @@ urlpatterns = [
     path('plans/', views.plans, name='plans'),
     path('classes/', views.classes, name='classes'),
     path('videos/', video, name='videos'),
+    path('stats/', views.stats, name='stats'),
     path('<int:id>', views.video_details, name='video_details'),
     path('contact/', views.contact, name='contact'),
     path('classes/yoga/', views.classes_yoga, name='classes_yoga'),

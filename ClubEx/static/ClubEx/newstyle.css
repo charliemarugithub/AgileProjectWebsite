@@ -267,14 +267,23 @@ td{
   text-align:left;
 }
 
-/* Video Detaisl Page */
+/* Video Details Page */
 
 #vidcontainer{
   text-align:left;
 }
 
 #vidcontainer h1{
-  margin-bottom:30px;
+  margin-top:15px;
+  margin-bottom:0;
+}
+
+#vidcontainer p{
+  margin-bottom:10px;
+}
+
+.rw-ui-container{
+  margin-bottom:10px;
 }
 
 /* About Page */
@@ -283,6 +292,52 @@ td{
   max-width:1000px;
   margin:auto;
 }
+
+/* Stats Page */
+
+#statscontainer{
+  text-align:left;
+}
+
+#statscontainer h1{
+  margin-bottom:50px;
+}
+
+.statsbox{
+  margin-bottom:50px;
+}
+
+.statsimg{
+  display:inline-block;
+  transition:opacity 0.5s;
+}
+
+.statsimg:hover{
+  opacity:0.3;
+}
+
+.statscontent{
+  display:inline-block;
+  margin-left:20px;
+}
+
+.statscontent a{
+  margin-bottom:10px;
+}
+
+.statscontent h3{
+  color:#540982;
+  transition:color 0.3s;
+}
+
+.statscontent h3:hover{
+  color:#a200c9;
+}
+
+.rw-ui-container{
+  margin-top:5px;
+}
+
 
 /* Contact Page */
 
