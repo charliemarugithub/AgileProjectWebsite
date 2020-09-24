@@ -25,6 +25,7 @@
           <p class="text-secondary">{{ user.email }}</p>
           {% if user.username == 'admin'  %}
                 <a href="{% url 'stats' %}">View Statistics Page</a>
+                <p>{{ Subscriptions.sub_type }}</p>
           {% else %}
                 <p>No Rights To View Statistics Page</p>
                 <p>{{ Subscriptions.sub_type }}</p>
