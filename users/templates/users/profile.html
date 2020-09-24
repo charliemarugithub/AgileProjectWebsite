@@ -27,6 +27,7 @@
                 <a href="{% url 'stats' %}">View Statistics Page</a>
           {% else %}
                 <p>No Rights To View Statistics Page</p>
+                <p>{{ Subscriptions.sub_type }}</p>
           {% endif %}
         </div>
       </div>
