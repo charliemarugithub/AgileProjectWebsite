@@ -21,16 +21,20 @@
 
 <body>
   <div class="section">
-      <div class="container" id="vidcontainer">
-        <div class="videobox">
-          {% video obj.video '900x500' %}
-        </div>
-        <div class="videocontent">
-          <h1>{{ obj.video_name }}</h1>
-          <p>{{ obj.content  }}</p>
-          <div class="rw-ui-container"></div>
-          <h5>Number of views: {{ obj.video_views }}</h5>
-        </div>
+      <div class="container" id="statscontainer">
+        <h1>Statistics</h1>
+        {% for i in obj %}
+          <div class="statsbox" href>
+              <a class="statsimg" href="{% url 'video_details' i.id %}">
+                <img src="{{ i.video_thumbnail.url }}" alt="#" width="320" height="200">
+              </a>
+              <div class="statscontent">  
+                <a href="{% url 'video_details' i.id %}"><h3>{{ i.video_name }}</h3></a>
+                <div class="rw-ui-container"></div>
+                <h5>Number of views: {{ i.video_views }}</h5>
+              </div>
+            </div>
+        {% endfor %}
       </div>
   </div>
 
