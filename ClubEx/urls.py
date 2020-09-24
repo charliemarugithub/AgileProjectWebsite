@@ -13,6 +13,7 @@ urlpatterns = [
     path('videos/', video, name='videos'),
     path('<int:id>', views.video_details, name='video_details'),
     path('contact/', views.contact, name='contact'),
+    path('stats/', views.stats, name='stats'),
     path('classes/yoga/', views.classes_yoga, name='classes_yoga'),
     path('<int:id>', views.classes_yoga_details, name='video_details'),
     path('classes/boxing/', views.classes_boxing, name='classes_boxing'),

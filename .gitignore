@@ -20,3 +20,4 @@ users/__pycache__/forms.cpython-38.pyc
 users/__pycache__/models.cpython-38.pyc
 users/__pycache__/views.cpython-38.pyc
 db.sqlite3
+*.pyc
