@@ -228,6 +228,11 @@ sup{
   font-weight:700;
   color:#fff;
   background-color:#540982;
+  transition:background-color 0.3s;
+}
+
+#classportfolio li a p:hover{
+  background-color:#a200c9;
 }
 
 /* Videos Pages */
